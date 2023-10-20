@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { StorageService } from './services/storage.service';
 import { AuthService } from './services/auth.service';
 import { ProductComponent } from './components/product/product.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductComponent } from './components/product/product.component';
     OrdersComponent,
     RegisterComponent,
     ProductComponent,
+    IntroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule,HttpClientModule],
   providers: [StorageService,AuthService],
