@@ -1,20 +1,31 @@
 <!-- <p>cart works!</p> -->
 <p class="fs-3 mt-3">CART PAGE</p>
 <table class="table table-striped table-hover mt-5">
-    <thead>
-        <tr>
-          <th scope="col">id</th>
-          <th scope="col">Title</th>
-          <th scope="col">count</th>
-          <th scope="col">price</th>
-        </tr>
-      </thead>
-      <tbody *ngFor="let cart of carts">
-        <tr>
-          <th>{{cart.id}}</th>
-          <td>{{cart.title}}</td>
-          <td>{{cart.count}}</td>
-          <td>{{cart.price}}</td>
-        </tr>
-      </tbody>
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let cart of carts">
+    <tr>
+      <th>{{ cart.id }}</th>
+      <td>{{ cart.title }}</td>
+      <td>{{ cart.count }}</td>
+      <td>{{ cart.price }}</td>
+    </tr>
+  </tbody>
 </table>
+<div class="container-fluid d-flex flex-row-reverse w-10">
+  <div class="col-3">
+    <button
+      type="button"
+      (click)="clearcart()"
+      class="btn btn-primary px-3 me-2"
+    >
+      Checkout
+    </button>
+  </div>
+</div>

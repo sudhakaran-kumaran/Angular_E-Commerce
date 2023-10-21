@@ -9,7 +9,6 @@ import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { LoginComponent } from './components/login/login.component';
-import { OrdersComponent } from './components/orders/orders.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { StorageService } from './services/storage.service';
@@ -26,7 +25,6 @@ import { IntroComponent } from './components/intro/intro.component';
   
  
     LoginComponent,
-    OrdersComponent,
     RegisterComponent,
     ProductComponent,
     IntroComponent,

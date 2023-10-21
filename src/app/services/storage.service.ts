@@ -57,4 +57,9 @@ export class StorageService {
       localStorage.setItem('carts', JSON.stringify(cart));
     }
   }
+  clearcart() {
+    let order: Product[] = JSON.parse(localStorage.getItem('cart') as string);
+    localStorage.setItem('order', JSON.stringify(order) as string);
+    return localStorage.setItem('cart', JSON.stringify([]) as string);
+  }
 }
